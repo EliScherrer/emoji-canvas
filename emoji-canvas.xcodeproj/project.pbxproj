@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3E515884203E37C2000C7F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E515883203E37C2000C7F47 /* AppDelegate.swift */; };
-		3E515886203E37C2000C7F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E515885203E37C2000C7F47 /* ViewController.swift */; };
 		3E515889203E37C2000C7F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E515887203E37C2000C7F47 /* Main.storyboard */; };
 		3E51588B203E37C2000C7F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E51588A203E37C2000C7F47 /* Assets.xcassets */; };
 		3E51588E203E37C2000C7F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E51588C203E37C2000C7F47 /* LaunchScreen.storyboard */; };
 		3E515899203E37C2000C7F47 /* emoji_canvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E515898203E37C2000C7F47 /* emoji_canvasTests.swift */; };
 		3E5158A4203E37C2000C7F47 /* emoji_canvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5158A3203E37C2000C7F47 /* emoji_canvasUITests.swift */; };
+		3E5158B2203E39F6000C7F47 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5158B1203E39F6000C7F47 /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		3E515880203E37C2000C7F47 /* emoji-canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emoji-canvas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E515883203E37C2000C7F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E515885203E37C2000C7F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E515888203E37C2000C7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E51588A203E37C2000C7F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E51588D203E37C2000C7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		3E51589F203E37C2000C7F47 /* emoji-canvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emoji-canvasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5158A3203E37C2000C7F47 /* emoji_canvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emoji_canvasUITests.swift; sourceTree = "<group>"; };
 		3E5158A5203E37C2000C7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E5158B1203E39F6000C7F47 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				3E515883203E37C2000C7F47 /* AppDelegate.swift */,
-				3E515885203E37C2000C7F47 /* ViewController.swift */,
 				3E515887203E37C2000C7F47 /* Main.storyboard */,
 				3E51588A203E37C2000C7F47 /* Assets.xcassets */,
 				3E51588C203E37C2000C7F47 /* LaunchScreen.storyboard */,
 				3E51588F203E37C2000C7F47 /* Info.plist */,
+				3E5158B1203E39F6000C7F47 /* CanvasViewController.swift */,
 			);
 			path = "emoji-canvas";
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E515886203E37C2000C7F47 /* ViewController.swift in Sources */,
+				3E5158B2203E39F6000C7F47 /* CanvasViewController.swift in Sources */,
 				3E515884203E37C2000C7F47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
