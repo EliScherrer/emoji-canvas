@@ -39,6 +39,6 @@ The following **stretch** user stories are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Imgur]()
+![Imgur](https://i.imgur.com/b461HRz.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
