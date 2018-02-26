@@ -111,9 +111,11 @@ class CanvasViewController: UIViewController {
                             self.newlyCreatedFace.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             }, completion: nil)
 
-//            newlyCreatedFace.isUserInteractionEnabled = true
-//            let dragGesture = UITapGestureRecognizer(target: self, action: #selector(self.didDragFace2))
-//            newlyCreatedFace.addGestureRecognizer(dragGesture)
+            
+            let dragGesture = UIPanGestureRecognizer(target: self, action: #selector(self.didDragFace2))
+            newlyCreatedFace.isUserInteractionEnabled = true
+            newlyCreatedFace.addGestureRecognizer(dragGesture)
+            
         }
         
         
@@ -126,21 +128,12 @@ class CanvasViewController: UIViewController {
         
         if sender.state == .began {
             //imageView now refers to the face that you panned on.
-            let imageView = sender.view as! UIImageView
+            newlyCreatedFace = sender.view as! UIImageView
             
-            //Create a new image view that has the same image as the one you're currently panning.
-            newlyCreatedFace = UIImageView(image: imageView.image)
+            newlyCreatedFaceOriginalCenter = newlyCreatedFace.center // so we can offset by translation later.
             
             //Add the new face to the main view.
             view.addSubview(newlyCreatedFace)
-            
-            //Initialize the position of the new face.
-            newlyCreatedFace.center = imageView.center
-            
-            //Since the original face is in the tray, but the new face is in the main view, you have to offset the coordinates.
-            newlyCreatedFace.center.y += trayView.frame.origin.y
-            
-            newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
             
             UIView.animate(withDuration:0.1, delay: 0.0,
                            options: [],
